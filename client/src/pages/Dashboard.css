@@ -1,0 +1,148 @@
+.app-shell {
+  min-height: 100vh;
+  background: var(--surface);
+}
+
+.dashboard {
+  padding-top: 36px;
+  padding-bottom: 64px;
+}
+
+.dashboard-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.dashboard-head h1 {
+  font-size: 1.75rem;
+  margin-bottom: 4px;
+}
+
+.dashboard-head p {
+  font-size: 0.95rem;
+}
+
+.dashboard-head-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.dashboard-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.dashboard-section-head h2 {
+  font-size: 1.25rem;
+}
+
+.campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+}
+
+.campaign-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.campaign-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px rgba(124, 58, 237, 0.12);
+}
+
+.campaign-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.campaign-card-top h3 {
+  font-size: 1.05rem;
+}
+
+.campaign-card-desc {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.8em;
+}
+
+.campaign-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  margin-top: auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.invite-prefill {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  padding: 11px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  margin-bottom: 18px;
+}
+
+.invite-link-box {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.invite-link-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.invite-link-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 8px 8px 12px;
+}
+
+.invite-link-row code {
+  flex: 1;
+  font-size: 0.78rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  color: var(--text-primary);
+}

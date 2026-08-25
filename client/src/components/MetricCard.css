@@ -1,0 +1,24 @@
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 22px;
+}
+
+.metric-label {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.metric-value {
+  font-size: 1.85rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.metric-hint {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}

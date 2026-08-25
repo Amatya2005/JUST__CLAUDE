@@ -1,0 +1,57 @@
+.discovery {
+  padding-top: 36px;
+  padding-bottom: 64px;
+}
+
+.discovery-head h1 {
+  font-size: 1.75rem;
+  margin-bottom: 4px;
+}
+
+.discovery-head p {
+  font-size: 0.95rem;
+}
+
+.discovery-banner {
+  margin: 22px 0 26px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border: 1px solid #ddd6fe;
+  border-radius: 12px;
+  padding: 13px 18px;
+  font-size: 0.89rem;
+  font-weight: 500;
+}
+
+.discovery-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.discovery-filters {
+  position: sticky;
+  top: 84px;
+}
+
+.discovery-count {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.creator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 860px) {
+  .discovery-layout {
+    grid-template-columns: 1fr;
+  }
+  .discovery-filters {
+    position: static;
+  }
+}

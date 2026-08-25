@@ -1,0 +1,246 @@
+.campaign-detail {
+  padding-top: 28px;
+  padding-bottom: 64px;
+}
+
+.back-link {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+.campaign-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 18px 0 34px;
+}
+
+.campaign-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.campaign-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.campaign-header-desc {
+  margin-top: 12px;
+  max-width: 640px;
+  font-size: 0.95rem;
+}
+
+.roster h2,
+.campaign-summary h2 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.campaign-summary {
+  margin-top: 44px;
+}
+
+.table-wrap {
+  padding: 0;
+  overflow-x: auto;
+}
+
+.roster-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 880px;
+}
+
+.roster-table th {
+  text-align: left;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.roster-table td {
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+  vertical-align: middle;
+}
+
+.roster-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.roster-table tbody tr:hover {
+  background: #fcfbff;
+}
+
+.roster-email {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.roster-actions {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Analytics panel */
+.analytics-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.analytics-handle {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--primary);
+}
+
+.analytics-topline,
+.analytics-engagement {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+
+.analytics-topline div,
+.analytics-engagement div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.analytics-topline span,
+.analytics-engagement span {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.analytics-topline strong,
+.analytics-engagement strong {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.analytics-engagement strong {
+  color: var(--primary);
+}
+
+.analytics-section {
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+
+.analytics-section h4 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.analytics-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+}
+
+.analytics-facts strong {
+  color: var(--text-primary);
+  float: right;
+}
+
+.analytics-facts span {
+  display: block;
+}
+
+.gender-split {
+  display: flex;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+
+.gender-bar-f {
+  background: var(--primary);
+}
+
+.gender-bar-m {
+  background: var(--accent);
+}
+
+.gender-legend {
+  display: flex;
+  gap: 18px;
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.age-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.age-row {
+  display: grid;
+  grid-template-columns: 48px 1fr 44px;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.83rem;
+}
+
+.age-label {
+  color: var(--text-secondary);
+}
+
+.age-track {
+  height: 9px;
+  background: var(--primary-light);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.age-fill {
+  height: 100%;
+  background: var(--gradient);
+  border-radius: 999px;
+}
+
+.age-value {
+  text-align: right;
+  font-weight: 600;
+}
+
+.analytics-footnote {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}

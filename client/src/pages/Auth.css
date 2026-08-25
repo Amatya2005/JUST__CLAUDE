@@ -1,0 +1,144 @@
+.auth-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.auth-panel {
+  background: var(--gradient);
+  color: #fff;
+  padding: 56px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-panel::after {
+  content: '';
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.09);
+  bottom: -160px;
+  right: -140px;
+}
+
+.auth-panel-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-panel-logo-mark {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.auth-panel-body {
+  position: relative;
+  z-index: 1;
+}
+
+.auth-panel-body h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.auth-panel-body p {
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 400px;
+}
+
+.auth-panel-footnote {
+  position: relative;
+  z-index: 1;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.auth-form-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background: #fff;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 380px;
+}
+
+.auth-form h1 {
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+
+.auth-form-sub {
+  margin-bottom: 28px;
+}
+
+.auth-alt {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.auth-alt a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.role-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 22px;
+}
+
+.role-toggle button {
+  padding: 9px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.role-toggle button.active {
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(17, 24, 39, 0.08);
+}
+
+@media (max-width: 880px) {
+  .auth-layout {
+    grid-template-columns: 1fr;
+  }
+  .auth-panel {
+    padding: 34px 28px;
+    min-height: auto;
+    gap: 24px;
+  }
+  .auth-panel-footnote {
+    display: none;
+  }
+}
