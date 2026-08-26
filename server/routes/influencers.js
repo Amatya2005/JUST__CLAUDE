@@ -48,8 +48,11 @@ router.post('/invite', verifyToken, requireRole('agency'), async (req, res) => {
       )
     }
 
+    // Falls back to the origin this request arrived on, so a single-service
+    // deploy produces working invite links even before FRONTEND_URL is set.
+    const baseUrl = process.env.FRONTEND_URL || `${req.protocol}://${req.get('host')}`
     const inviteLink = influencer.invite_token
-      ? `${process.env.FRONTEND_URL}/join?token=${influencer.invite_token}`
+      ? `${baseUrl}/join?token=${influencer.invite_token}`
       : null
 
     res.json({

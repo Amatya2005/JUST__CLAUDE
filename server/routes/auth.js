@@ -1,10 +1,24 @@
 const express = require('express')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const rateLimit = require('express-rate-limit')
 const pool = require('../db')
 const phyllo = require('../services/phyllo')
 
 const router = express.Router()
+
+// Credential endpoints are the ones worth brute-forcing, so they get a tighter
+// budget than the rest of the API.
+const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 20,
+  standardHeaders: true,
+  legacyHeaders: false,
+  skip: () => process.env.NODE_ENV === 'test',
+  message: { success: false, error: 'Too many attempts — please try again later' },
+})
+
+router.use(authLimiter)
 
 function signToken(id, role) {
   return jwt.sign({ id, role }, process.env.JWT_SECRET, { expiresIn: '7d' })
