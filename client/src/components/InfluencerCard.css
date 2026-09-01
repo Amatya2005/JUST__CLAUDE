@@ -1,0 +1,91 @@
+.creator-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.creator-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.creator-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.creator-avatar-placeholder {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.creator-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.creator-identity strong {
+  font-size: 0.95rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.creator-platform {
+  align-self: flex-start;
+  text-transform: capitalize;
+}
+
+.creator-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.creator-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.creator-stats span {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+}
+
+.creator-stats strong {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.creator-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.creator-actions .btn {
+  white-space: nowrap;
+}
+
+.creator-profile-link {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 500;
+}

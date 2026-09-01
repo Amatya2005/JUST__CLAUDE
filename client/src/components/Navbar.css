@@ -1,0 +1,138 @@
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-transparent {
+  background: transparent;
+  border-bottom: none;
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+}
+
+.navbar-transparent .navbar-logo {
+  color: #fff;
+}
+
+.navbar-logo-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: var(--gradient);
+}
+
+.navbar-transparent .navbar-logo-mark {
+  background: #fff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 22px;
+  font-size: 0.93rem;
+  font-weight: 500;
+}
+
+.navbar-links a {
+  color: var(--text-secondary);
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-links a:hover {
+  color: var(--text-primary);
+}
+
+.navbar-links a.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.navbar-transparent .navbar-links a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-transparent .navbar-links a:hover,
+.navbar-transparent .navbar-links a.active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.navbar-transparent .navbar-avatar {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.navbar-transparent .navbar-username {
+  color: #fff;
+}
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-transparent .navbar-right .btn-ghost {
+  color: #fff;
+}
+
+.navbar-transparent .navbar-right .btn-primary {
+  background: #fff;
+  color: var(--primary);
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.navbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+.navbar-username {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .navbar-username {
+    display: none;
+  }
+  .navbar-inner {
+    gap: 18px;
+  }
+}

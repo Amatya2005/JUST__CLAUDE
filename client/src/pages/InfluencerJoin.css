@@ -1,0 +1,95 @@
+.join-status {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  padding: 24px;
+}
+
+.join-error-card,
+.join-success-card {
+  max-width: 420px;
+  text-align: center;
+}
+
+.join-error-card h2,
+.join-success-card h2 {
+  margin-bottom: 10px;
+}
+
+.join-success-card p {
+  margin-bottom: 22px;
+}
+
+.join-success-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #d1fae5;
+  color: var(--success);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.join-connect-wrap {
+  width: 100%;
+  max-width: 480px;
+}
+
+.join-connect-card {
+  background: var(--gradient);
+  color: #fff;
+  border-radius: 12px;
+  padding: 40px 34px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(91, 33, 182, 0.3);
+}
+
+.join-connect-card h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.join-connect-card p {
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 26px;
+}
+
+.join-connect-card .btn-primary {
+  background: #fff;
+  color: var(--primary-dark);
+}
+
+.join-connect-card .btn-primary:hover:not(:disabled) {
+  background: #f5f3ff;
+}
+
+.join-step-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.join-connect-card .join-step-label {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.join-skip {
+  display: block;
+  margin: 18px auto 0;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.88rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
